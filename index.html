@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreamFinder</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+
+
+<body class="bg-slate-950 text-white min-h-screen">
+  <main class="max-w-5xl mx-auto px-6 py-12">
+    <h1 id="mainTitle" class="text-4xl font-bold text-center">
+      StreamFinder
+    </h1>
+    <p id="message" class="text-slate-400 text-center mt-3">
+      Find your next TV show.
+    </p>
+
+    <!-- Search Bar Section -->
+    <div class="flex gap-2 max-w-xl mx-auto mt-8">
+      <input id="searchInput" type="text" placeholder="Search for a show..."
+        class="flex-1 bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 outline-none focus:border-blue-500">
+
+
+      <button id="searchBtn" class="bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded-lg font-semibold cursor-pointer">
+        Search
+      </button>
+    </div>
+
+    <div class="flex justify-center mt-4">
+
+      <button id="randomBtn" class="bg-purple-600 hover:bg-purple-500 px-5 py-3 rounded-lg font-semibold">
+        Random Pick
+      </button>
+    </div>
+
+
+    <div id="history" class="flex gap-2 justify-center mt-4 flex-wrap"></div>
+
+    <section id="results" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+    </section>
+  </main>
+
+  <script src="movie.js"></script>
+</body>
+
+</html>
